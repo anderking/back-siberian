@@ -48,6 +48,12 @@ app.use(bodyParser.json({limit: "50mb"}))
 app.use('/public', express.static(path.join(__dirname, 'public')))
 app.use(session({ secret: 'passport-tutorial', cookie: { maxAge: 60000 }, resave: false, saveUninitialized: false }))
 
+app.get('/', (req, res)=>{
+    res.send("Hello World")
+})
+app.get('/api', (req, res)=>{
+    res.send("Hello World")
+})
 app.use('/api/user', rUser)
 app.use('/api/lender', rLender)
 app.use('/api/category', rCategory)
