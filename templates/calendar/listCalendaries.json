@@ -1,0 +1,71 @@
+{
+    "status": true,
+    "message" : { 
+      "code" : "{{#? message.code}}",
+      "text" : "{{#? message.text}}"
+    },
+    "calendaries": {
+      "{{#each calendaries}}": {
+        "id": "{{#? this.id}}",
+        "type": "{{#? this.type}}",
+        "date": "{{#? this.date}}",
+        "turn": "{{#? this.turn}}",
+        "status": "{{#? this.status}}",
+        "lenders": {
+          "{{#each LenderCalendars}}": {
+              "id": "{{#? this.User.id}}",
+              "firstName": "{{#? this.User.firstName}}",
+              "lastName": "{{#? this.User.lastName}}",
+              "email": "{{#? this.User.email}}",
+              "role": "{{#? this.User.RoleId}}",
+              "status": "{{#? this.User.status}}"
+            }
+        },
+        "revision":{
+          "id": "{{#? this.Revision.id}}",
+          "description": "{{#? this.Revision.description}}",
+          "imageRequestUrl": "{{#? this.Revision.imageRequestUrl}}",
+          "price": "{{#? this.Revision.price}}",
+          "note": "{{#? this.Revision.note}}",
+          "imageRevisionUrl": "{{#? this.Revision.imageRevisionUrl}}",
+          "numberWorkers": "{{#? this.Revision.numberWorkers}}",
+          "numberDays": "{{#? this.Revision.numberDays}}",
+          "status": "{{#? this.Revision.status}}",
+          "isForGuarantee": "{{#? this.Revision.isForGuarantee}}",
+          "varietyDetail":{ 
+            "id": "{{#? this.Revision.VarietyDetail.id}}",
+            "name": "{{#? this.Revision.VarietyDetail.name}}",
+            "description": "{{#? this.Revision.VarietyDetail.description}}",
+            "status": "{{#? this.Revision.VarietyDetail.status}}",   
+            "VarietyEquipinfraId": "{{#? this.Revision.VarietyDetail.VarietyEquipinfraId}}"       
+          }
+          },
+        "serviceOrderDetail":{
+          "id": "{{#? this.ServiceOrderDetail.id}}",
+          "amount": "{{#? this.ServiceOrderDetail.amount}}",
+          "duration": "{{#? this.ServiceOrderDetail.duration}}",
+          "status": "{{#? this.ServiceOrderDetail.status}}",
+          "ServiceOrder": {
+                "id": "{{#? this.ServiceOrderDetail.ServiceOrder.id}}",        
+                "code": "{{#? this.ServiceOrderDetail.ServiceOrder.code}}",        
+                "amount": "{{#? this.ServiceOrderDetail.ServiceOrder.amount}}",        
+                "discount": "{{#? this.ServiceOrderDetail.ServiceOrder.discount}}",        
+                "warrantyTime": "{{#? this.ServiceOrderDetail.ServiceOrder.warrantyTime}}",        
+                "reason": "{{#? this.ServiceOrderDetail.ServiceOrder.reason}}",        
+                "imageClaimUrl": "{{#? this.ServiceOrderDetail.ServiceOrder.imageClaimUrl}}",        
+                "status": "{{#? this.ServiceOrderDetail.ServiceOrder.status}}",        
+                "imagePaymentUrl": "{{#? this.ServiceOrderDetail.ServiceOrder.imagePaymentUrl}}"     
+   
+            },
+            "ServiceDetail": {
+              "id": "{{#? this.ServiceOrderDetail.ServiceDetail.id}}",       
+              "name": "{{#? this.ServiceOrderDetail.ServiceDetail.name}}",      
+              "estimatedPrice": "{{#? this.ServiceOrderDetail.ServiceDetail.estimatedPrice}}",      
+              "estimatedWarrantyTime": "{{#? this.ServiceOrderDetail.ServiceDetail.estimatedWarrantyTime}}",      
+              "status": "{{#? this.ServiceOrderDetail.ServiceDetail.status}}",   
+              "note": "{{#? this.ServiceOrderDetail.ServiceDetail.note}}"              
+            }             
+          }
+      }
+    }
+  }

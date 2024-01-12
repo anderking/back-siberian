@@ -1,0 +1,55 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"equipinfras": {
+		"id": "{{#? this.Equipinfras.id}}",
+		"name": "{{#? this.Equipinfras.name}}",
+		"type": "{{#? this.Equipinfras.type}}",
+		"imageUrl": "{{#? this.Equipinfras.imageUrl}}",
+		"description": "{{#? this.Equipinfras.description}}",
+		"status": "{{#? this.Equipinfras.status}}",
+		"createdAt": "{{#? this.Equipinfras.createdAt}}",
+		"updatedAt": "{{#? this.Equipinfras.updatedAt}}",
+		"subcategory": {
+			"id": "{{#? this.Equipinfras.Subcategory.id}}",
+			"name": "{{#? this.Equipinfras.Subcategory.name}}",
+			"description": "{{#? this.Equipinfras.Subcategory.description}}",
+			"status": "{{#? this.Equipinfras.Subcategory.status}}",
+			"createdAt": "{{#? this.Equipinfras.Subcategory.createdAt}}",
+			"updatedAt": "{{#? this.Equipinfras.Subcategory.updatedAt}}",
+			"Category": {
+				"id": "{{#? this.Equipinfras.Subcategory.Category.id}}",
+				"name": "{{#? this.Equipinfras.Subcategory.Category.name}}",
+				"description": "{{#? this.Equipinfras.Subcategory.Category.description}}",
+				"status": "{{#? this.Equipinfras.Subcategory.Category.status}}",
+				"createdAt": "{{#? this.Equipinfras.Subcategory.Category.createdAt}}",
+				"updatedAt": "{{#? this.Equipinfras.Subcategory.Category.updatedAt}}"
+			}
+		},
+		"varieties": {
+			"{{#each Equipinfras.VarietyEquipinfras}}": {
+				"id": "{{#? this.Variety.id}}",
+				"name": "{{#? this.Variety.name}}",
+				"description": "{{#? this.Variety.description}}",
+				"status": "{{#? this.Variety.status}}",
+				"VarietyEquipinfras_id": "{{#? this.id}}",
+				"createdAt": "{{#? this.Variety.createdAt}}",
+				"updatedAt": "{{#? this.Variety.updatedAt}}",
+				"varietyDetails": {
+					"{{#each VarietyDetails}}": {
+						"id": "{{#? this.id}}",
+						"name": "{{#? this.name}}",
+						"description": "{{#? this.description}}",
+						"status": "{{#? this.status}}",
+						"VarietyEquipinfras_id": "{{#? this.VarietyEquipinfraId}}",
+						"createdAt": "{{#? this.createdAt}}",
+						"updatedAt": "{{#? this.updatedAt}}"
+					}
+				}
+			}
+		}
+	}
+}

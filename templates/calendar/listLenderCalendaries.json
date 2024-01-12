@@ -1,0 +1,72 @@
+{
+    "status": true,
+    "message" : { 
+      "code" : "{{#? message.code}}",
+      "text" : "{{#? message.text}}"
+    },
+    "lender": {
+        "id": "{{#? this.lenderCalendaries.id}}",
+        "firstName": "{{#? this.lenderCalendaries.firstName}}",
+        "lastName": "{{#? this.lenderCalendaries.lastName}}",
+        "email": "{{#? this.lenderCalendaries.email}}",
+        "role": "{{#? this.lenderCalendaries.RoleId}}",
+        "status": "{{#? this.lenderCalendaries.status}}",
+        "lenderCalendaries": {
+            "{{#each lenderCalendaries.LenderCalendars}}": { 
+                "id": "{{#? this.id}}",
+                "type": "{{#? this.Calendar.type}}",
+                "date": "{{#? this.Calendar.date}}",
+                "turn": "{{#? this.Calendar.turn}}",
+                "status": "{{#? this.Calendar.status}}",
+                "calendarId": "{{#? this.CalendarId}}",
+                
+                "revision":{
+                    "id": "{{#? this.Calendar.Revision.id}}",
+                    "description": "{{#? this.Calendar.Revision.description}}",
+                    "imageRequestUrl": "{{#? this.Calendar.Revision.imageRequestUrl}}",
+                    "price": "{{#? this.Calendar.Revision.price}}",
+                    "note": "{{#? this.Calendar.Revision.note}}",
+                    "imageRevisionUrl": "{{#? this.Calendar.Revision.imageRevisionUrl}}",
+                    "numberWorkers": "{{#? this.Calendar.Revision.numberWorkers}}",
+                    "numberDays": "{{#? this.Calendar.Revision.numberDays}}",
+                    "status": "{{#? this.Calendar.Revision.status}}",
+                    "isForGuarantee": "{{#? this.Calendar.Revision.isForGuarantee}}",
+                    "varietyDetail":{ 
+                      "id": "{{#? this.Calendar.Revision.VarietyDetail.id}}",
+                      "name": "{{#? this.Calendar.Revision.VarietyDetail.name}}",
+                      "description": "{{#? this.Calendar.Revision.VarietyDetail.description}}",
+                      "status": "{{#? this.Calendar.Revision.VarietyDetail.status}}",   
+                      "VarietyEquipinfraId": "{{#? this.Calendar.Revision.VarietyDetail.VarietyEquipinfraId}}"       
+                    }
+                  },
+                  "serviceOrderDetail":{
+                    "id": "{{#? this.Calendar.ServiceOrderDetail.id}}",
+                    "amount": "{{#? this.Calendar.ServiceOrderDetail.amount}}",
+                    "duration": "{{#? this.Calendar.ServiceOrderDetail.duration}}",
+                    "status": "{{#? this.Calendar.ServiceOrderDetail.status}}",
+                   
+                    "ServiceOrder": {
+                          "id": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.id}}",        
+                          "code": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.code}}",        
+                          "amount": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.amount}}",        
+                          "discount": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.discount}}",
+                          "warrantyTime": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.warrantyTime}}",        
+                          "reason": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.reason}}",        
+                          "imageClaimUrl": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.imageClaimUrl}}",        
+                          "status": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.status}}",        
+                          "imagePaymentUrl": "{{#? this.Calendar.ServiceOrderDetail.ServiceOrder.imagePaymentUrl}}"     
+             
+                      },
+                      "ServiceDetail": {
+                        "id": "{{#? this.Calendar.ServiceOrderDetail.ServiceDetail.id}}",       
+                        "name": "{{#? this.Calendar.ServiceOrderDetail.ServiceDetail.name}}",      
+                        "estimatedPrice": "{{#? this.Calendar.ServiceOrderDetail.ServiceDetail.estimatedPrice}}",      
+                        "estimatedWarrantyTime": "{{#? this.Calendar.ServiceOrderDetail.ServiceDetail.estimatedWarrantyTime}}",      
+                        "status": "{{#? this.Calendar.ServiceOrderDetail.ServiceDetail.status}}",   
+                        "note": "{{#? this.Calendar.ServiceOrderDetail.ServiceDetail.note}}"              
+                      }             
+                    }
+            }
+        }
+    }
+}

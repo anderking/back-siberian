@@ -1,0 +1,21 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"functions": {
+		"{{#each functions}}": {
+			"id": "{{#? this.id}}",
+			"parentId": "{{#? this.parentId}}",
+			"title": "{{#? this.title}}",
+			"description": "{{#? this.description}}",
+			"entity": "{{#? this.entity}}",
+			"action": "{{#? this.action}}",
+			"urlIntranet": "{{#? this.urlIntranet}}",
+			"urlMobile": "{{#? this.urlMobile}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"updatedAt": "{{#? this.updatedAt}}"
+		}
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"lender": {
+		"id": "{{#? lender.id}}",
+		"firstName": "{{#? lender.firstName}}",
+		"lastName": "{{#? lender.lastName}}",
+		"imageUrl": "{{#? lender.imageUrl}}",
+		"gender": "{{#? lender.gender}}",
+		"note": "{{#? lender.note}}",
+		"status": "{{#? lender.status}}",
+		"revisions": {
+		  "{{#each lender.LenderCalendars}}": {
+        "id": "{{#? this.Calendar.Revision.id}}",
+        "description": "{{#? this.Calendar.Revision.description}}",
+        "imageRequestUrl": "{{#? this.Calendar.Revision.imageRequestUrl}}",
+        "note": "{{#? this.Calendar.Revision.note}}",
+        "price": "{{#? this.Calendar.Revision.price}}",
+        "imageRevisionUrl": "{{#? this.Calendar.Revision.imageRevisionUrl}}",
+        "numberWorkers": "{{#? this.Calendar.Revision.numberWorkers}}",
+        "numberDays": "{{#? this.Calendar.Revision.numberDays}}",
+        "isForGuarantee": "{{#? this.Calendar.Revision.isForGuarantee}}",
+        "status": "{{#? this.Calendar.Revision.status}}",
+        "userId": "{{#? this.Calendar.Revision.UserId}}",
+        "user": {
+          "id": "{{#? this.Calendar.Revision.User.id}}",
+          "email": "{{#? this.Calendar.Revision.User.email}}",
+          "firstName": "{{#? this.Calendar.Revision.User.firstName}}",
+          "lastName": "{{#? this.Calendar.Revision.User.lastName}}",
+          "dni": "{{#? this.Calendar.Revision.User.dni}}",
+          "dniType": "{{#? this.Calendar.Revision.User.dniType}}",
+          "dateOfBirth": "{{#? his.Calendar.Revision.User.dateOfBirth}}",
+          "imageUrl": "{{#? this.Calendar.Revision.User.imageUrl}}",
+          "gender": "{{#? this.Calendar.Revision.User.gender}}",
+          "note": "{{#? this.Calendar.Revision.User.note}}",
+          "status": "{{#? this.Calendar.Revision.User.status}}"
+        },
+        "varietyDetail": {
+          "id": "{{#? this.Calendar.Revision.VarietyDetail.id}}",
+          "name": "{{#? this.Calendar.Revision.VarietyDetail.name}}",
+          "description": "{{#? this.Calendar.Revision.VarietyDetail.description}}",
+          "varietyEquipinfraId":"{{#? this.Calendar.Revision.VarietyDetail.VarietyEquipinfraId}}"
+        },
+        "location": {
+          "id": "{{#? this.Calendar.Revision.Location.id}}",
+          "address": "{{#? this.Calendar.Revision.Location.address}}",
+          "state": "{{#? this.Calendar.Revision.Location.state}}",
+          "city": "{{#? this.Calendar.Revision.Location.city}}",
+          "postalCode": "{{#? this.Calendar.Revision.Location.postalCode}}",
+          "isLivingPlace": "{{#? this.Calendar.Revision.Location.isLivingPlace}}",
+          "UserId": "{{#? this.Calendar.Revision.Location.UserId}}"
+        },
+        "calendar":{
+          "id": "{{#? this.Calendar.id}}",
+          "type": "{{#? this.Calendar.type}}",
+          "date": "{{#? this.Calendar.date}}",
+          "turn": "{{#? this.Calendar.turn}}",
+          "status": "{{#? this.Calendar.status}}"
+        }
+      }
+    }
+  }
+}
+

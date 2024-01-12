@@ -1,0 +1,40 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"skills": {
+		"{{#each skills}}": {
+			"id": "{{#? this.id}}",
+			"name": "{{#? this.name}}",
+			"description": "{{#? this.description}}",
+			"status": "{{#? this.status}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"updatedAt": "{{#? this.updatedAt}}",
+			"serviceDetails": {
+				"{{#each this.ServiceDetails}}": {
+					"id": "{{#? this.id}}",
+					"name": "{{#? this.name}}",
+					"serviceType": "{{#? this.serviceType}}",
+					"estimatedPrice": "{{#? this.estimatedPrice}}",
+					"estimatedWarrantyTime": "{{#? this.estimatedWarrantyTime}}",
+					"note": "{{#? this.note}}",
+					"status": "{{#? this.status}}"
+				}
+			},
+			"users": {
+				"{{#each this.Users}}": {
+					"id": "{{#? this.id}}",
+					"firstName": "{{#? this.firstName}}",
+					"lastName": "{{#? this.lastName}}",
+					"imageUrl": "{{#? this.imageUrl}}",
+					"gender": "{{#? this.gender}}",
+					"note": "{{#? this.note}}",
+					"status": "{{#? this.status}}",
+					"experienceYears": "{{#? this.SkillsLenders.experienceYears}}"
+				}
+			}
+		}
+	}
+}

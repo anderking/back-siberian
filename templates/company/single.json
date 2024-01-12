@@ -1,0 +1,23 @@
+{
+  "status": true,
+	"message" : { 
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "company": {
+    "id": "{{#? company.id}}",
+    "rif": "{{#? company.rif}}",
+    "name": "{{#? company.name}}",
+    "mission": "{{#? company.mission}}",
+    "vision": "{{#? company.vision}}",
+    "aboutUs": "{{#? company.aboutUs}}",
+    "address": "{{#? company.address}}",
+    "phoneOne": "{{#? company.phoneOne}}",
+    "phoneTwo": "{{#? company.phoneTwo}}",
+    "imageUrl": "{{#? company.imageUrl}}",
+    "facebook": "{{#? company.facebook}}",
+    "instagram": "{{#? company.instagram}}",
+    "twitter": "{{#? company.twitter}}",
+    "revisionPrice": "{{#? company.revisionPrice}}"
+  }
+}

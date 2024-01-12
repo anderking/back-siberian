@@ -1,0 +1,87 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "qualifications": {
+		"{{#each qualifications}}": {
+			"id": "{{#? this.id}}",
+      "createdAt": "{{#? this.createdAt}}",
+      "updatedAt": "{{#? this.updatedAt}}",
+      "typeQualification": "{{#? this.typeQualification}}",
+      "status": "{{#? this.status}}",
+      "author": {
+        "id": "{{#? this.Author.id}}",
+        "firstName": "{{#? this.Author.firstName}}",
+        "lastName": "{{#? this.Author.lastName}}",
+        "email": "{{#? this.Author.email}}",
+        "imageUrl": "{{#? this.Author.imageUrl}}",
+        "status": "{{#? this.Author.status}}"
+      },
+      "user": {
+        "id": "{{#? this.User.id}}",
+        "firstName": "{{#? this.User.firstName}}",
+        "lastName": "{{#? this.User.lastName}}",
+        "email": "{{#? this.User.email}}",
+        "imageUrl": "{{#? this.User.imageUrl}}",
+        "status": "{{#? this.User.status}}"
+      },
+      "serviceDetail": {
+        "id": "{{#? this.ServiceDetail.id}}",
+        "name": "{{#? this.ServiceDetail.name}}",
+        "serviceType": "{{#? this.ServiceDetail.serviceType}}",
+        "status": "{{#? this.ServiceDetail.status}}",
+        "component": {
+          "id": "{{#? this.ServiceDetail.Component.id}}",
+          "name": "{{#? this.ServiceDetail.Component.name}}",
+          "description": "{{#? this.ServiceDetail.Component.description}}",
+          "status": "{{#? this.ServiceDetail.Component.status}}"
+        }
+      },
+      "serviceOrderDetail": {
+        "id": "{{#? this.ServiceOrderDetail.id}}",
+        "serviceDetail": {
+          "id": "{{#? this.ServiceOrderDetail.ServiceDetail.id}}",
+          "name": "{{#? this.ServiceOrderDetail.ServiceDetail.name}}",
+          "serviceType": "{{#? this.ServiceOrderDetail.ServiceDetail.serviceType}}",
+          "status": "{{#? this.ServiceOrderDetail.ServiceDetail.status}}",
+          "component": {
+            "id": "{{#? this.ServiceOrderDetail.ServiceDetail.Component.id}}",
+            "name": "{{#? this.ServiceOrderDetail.ServiceDetail.Component.name}}",
+            "description": "{{#? this.ServiceOrderDetail.ServiceDetail.Component.description}}",
+            "status": "{{#? this.ServiceOrderDetail.ServiceDetail.Component.status}}"
+          }
+        },
+        "serviceOrder": {
+          "id": "{{#? this.ServiceOrderDetail.ServiceOrder.id}}",
+          "code": "{{#? this.ServiceOrderDetail.ServiceOrder.code}}",
+          "status": "{{#? this.serviceOrder.status}}",
+          "revision": {
+            "id": "{{#? this.ServiceOrderDetail.ServiceOrder.Revision.id}}",
+            "description": "{{#? this.ServiceOrderDetail.ServiceOrder.Revision.description}}",
+            "imageRequestUrl": "{{#? this.ServiceOrderDetail.ServiceOrder.Revision.imageRequestUrl}}",
+            "createdAt": "{{#? this.ServiceOrder.Revision.createdAt}}",
+            "status": "{{#? this.ServiceOrder.Revision.status}}"
+          }
+        },
+        "questions": {
+          "{{#each this.Questions}}": {
+            "id": "{{#? this.id}}",
+            "enquire": "{{#? this.enquire}}",
+            "description": "{{#? this.description}}",
+            "createdAt": "{{#? this.createdAt}}",
+            "updatedAt": "{{#? this.updatedAt}}",
+            "status": "{{#? this.status}}",
+            "points": "{{#? this.QualificationQuestion.points}}"
+          }
+        },
+        "duration": "{{#? this.ServiceOrderDetail.duration}}",
+        "numberWorkers": "{{#? this.ServiceOrderDetail.numberWorkers}}",
+        "createdAt": "{{#? this.ServiceOrderDetail.createdAt}}",
+        "updatedAt": "{{#? this.ServiceOrderDetail.updatedAt}}",
+        "status": "{{#? this.ServiceOrderDetail.status}}"
+      }
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "component": {
+		"id": "{{#? component.id}}",
+		"name": "{{#? component.name}}",
+    "description": "{{#? component.description}}",
+    "createdAt": "{{#? component.createdAt}}",
+    "updatedAt": "{{#? component.updatedAt}}",
+    "status": "{{#? component.status}}",
+    "serviceDetails": {
+      "{{#each component.ServiceDetails}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "serviceType": "{{#? this.serviceType}}",
+        "estimatedPrice": "{{#? this.estimatedPrice}}",
+        "estimatedWarrantyTime": "{{#? this.estimatedWarrantyTime}}",
+        "note": "{{#? this.note}}",
+        "createdAt": "{{#? this.createdAt}}",
+        "updatedAt": "{{#? this.updatedAt}}",
+        "status": "{{#? this.status}}"
+      }
+    }
+	}
+}

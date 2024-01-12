@@ -1,0 +1,202 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "serviceOrder": {
+		"id": "{{#? serviceOrder.id}}",
+    "code": "{{#? serviceOrder.code}}",
+    "amount": "{{#? serviceOrder.amount}}",
+    "discount": "{{#? serviceOrder.discount}}",
+    "warrantyTime": "{{#? serviceOrder.warrantyTime}}",
+    "reason": "{{#? serviceOrder.reason}}",
+    "imageClaimUrl": "{{#? serviceOrder.imageClaimUrl}}",
+    "imagePaymentUrl": "{{#? serviceOrder.imagePaymentUrl}}",
+    "createdAt": "{{#? serviceOrder.createdAt}}",
+    "updatedAt": "{{#? serviceOrder.updatedAt}}",
+    "status": "{{#? serviceOrder.status}}",
+    "revision": {
+      "id": "{{#? serviceOrder.Revision.id}}",
+      "description": "{{#? serviceOrder.Revision.description}}",
+      "imageRequestUrl": "{{#? serviceOrder.Revision.imageRequestUrl}}",
+      "note": "{{#? serviceOrder.Revision.note}}",
+      "price": "{{#? serviceOrder.Revision.price}}",
+      "imageRevisionUrl": "{{#? serviceOrder.Revision.imageRevisionUrl}}",
+      "numberWorkers": "{{#? serviceOrder.Revision.numberWorkers}}",
+      "numberDays": "{{#? serviceOrder.Revision.numberDays}}",
+      "isForGuarantee": "{{#? serviceOrder.Revision.isForGuarantee}}",
+      "createdAt": "{{#? serviceOrder.Revision.createdAt}}",
+      "status": "{{#? serviceOrder.Revision.status}}",
+      "user": {
+        "id": "{{#? serviceOrder.Revision.User.id}}",
+        "email": "{{#? serviceOrder.Revision.User.email}}",
+        "firstName": "{{#? serviceOrder.Revision.User.firstName}}",
+        "lastName": "{{#? serviceOrder.Revision.User.lastName}}",
+        "dni": "{{#? serviceOrder.Revision.User.dni}}",
+        "dniType": "{{#? serviceOrder.Revision.User.dniType}}",
+        "dateOfBirth": "{{#? serviceOrder.Revision.User.dateOfBirth}}",
+        "imageUrl": "{{#? serviceOrder.Revision.User.imageUrl}}",
+        "gender": "{{#? serviceOrder.Revision.User.gender}}",
+        "note": "{{#? serviceOrder.Revision.User.note}}",
+        "status": "{{#? serviceOrder.Revision.User.status}}"
+      },
+      "calendar": {
+        "id": "{{#? serviceOrder.Revision.Calendars[0].id}}",
+        "type": "{{#? serviceOrder.Revision.Calendars[0].type}}",
+        "date": "{{#? serviceOrder.Revision.Calendars[0].date}}",
+        "turn": "{{#? serviceOrder.Revision.Calendars[0].turn}}",
+        "status": "{{#? serviceOrder.Revision.Calendars[0].status}}",
+        "lender": {
+          "id": "{{#? serviceOrder.Revision.Calendars[0].LenderCalendars[0].User.id}}",
+          "firstName": "{{#? serviceOrder.Revision.Calendars[0].LenderCalendars[0].User.firstName}}",
+          "lastName": "{{#? serviceOrder.Revision.Calendars[0].LenderCalendars[0].User.lastName}}",
+          "email": "{{#? serviceOrder.Revision.Calendars[0].LenderCalendars[0].User.email}}",
+          "role": "{{#? serviceOrder.Revision.Calendars[0].LenderCalendars[0].User.RoleId}}",
+          "status": "{{#? serviceOrder.Revision.Calendars[0].LenderCalendars[0].User.status}}"
+        }
+      },
+      "promotion": {
+        "id": "{{#? serviceOrder.Revision.Promotion.id}}",
+        "name": "{{#? serviceOrder.Revision.Promotion.name}}",
+        "description": "{{#? serviceOrder.Revision.Promotion.description}}",
+        "type": "{{#? serviceOrder.Revision.Promotion.type}}",
+        "dateStart": "{{#? serviceOrder.Revision.Promotion.dateStart}}",
+        "dateEnd": "{{#? serviceOrder.Revision.Promotion.dateEnd}}",
+        "percentDiscount": "{{#? serviceOrder.Revision.Promotion.percentDiscount}}",
+        "imageUrl": "{{#? serviceOrder.Revision.Promotion.imageUrl}}",
+        "status": "{{#? serviceOrder.Revision.Promotion.status}}"
+      },
+      "varietyDetail": {
+        "id": "{{#? serviceOrder.Revision.VarietyDetail.id}}",
+        "name": "{{#? serviceOrder.Revision.VarietyDetail.name}}",
+        "description": "{{#? serviceOrder.Revision.VarietyDetail.description}}",
+        "varietyEquipinfraId":"{{#? serviceOrder.Revision.VarietyDetail.VarietyEquipinfraId}}",
+        "variety": {
+          "id": "{{#? serviceOrder.Revision.VarietyDetail.VarietyEquipinfra.Variety.id}}",
+          "name": "{{#? serviceOrder.Revision.VarietyDetail.VarietyEquipinfra.Variety.name}}"
+        },
+        "Equipinfra": {
+          "id": "{{#? serviceOrder.Revision.VarietyDetail.VarietyEquipinfra.Equipinfra.id}}",
+          "name": "{{#? serviceOrder.Revision.VarietyDetail.VarietyEquipinfra.Equipinfra.name}}"
+        }
+      }
+    },
+    "serviceOrderDetails": {
+      "{{#each serviceOrder.ServiceOrderDetails}}": {
+        "id": "{{#? this.id}}",
+        "ServiceDetailId": "{{#? this.ServiceDetailId}}",
+        "ServiceOrderId": "{{#? this.ServiceOrderId}}",
+        "duration": "{{#? this.duration}}",
+        "createdAt": "{{#? this.createdAt}}",
+        "updatedAt": "{{#? this.updatedAt}}",
+        "status": "{{#? this.status}}",
+        "ServiceDetail": {
+          "id": "{{#? this.ServiceDetail.id}}",
+          "name": "{{#? this.ServiceDetail.name}}",
+          "estimatedPrice":"{{#? this.ServiceDetail.estimatedPrice}}",
+          "estimatedWarrantyTime": "{{#? this.ServiceDetail.estimatedWarrantyTime}}",
+          "serviceType": "{{#? this.ServiceDetail.serviceType}}",
+          "status": "{{#? this.ServiceDetail.status}}",
+          "note": "{{#? this.ServiceDetail.note}}",
+          "ComponentId": "{{#? this.ServiceDetail.ComponentId}}",
+          "resources": {
+            "{{#each this.ServiceDetail.Resources}}": {
+              "id": "{{#? this.id}}",
+              "name": "{{#? this.name}}",
+              "description": "{{#? this.description}}",
+              "resourceType": "{{#? this.resourceType}}",
+              "measureUnit": "{{#? this.measureUnit}}",
+              "price": "{{#? this.price}}",
+              "createdAt": "{{#? this.createdAt}}",
+              "updatedAt": "{{#? this.updatedAt}}",
+              "status": "{{#? this.status}}",
+              "quantity": "{{#? this.ServiceDetailResource.quantity}}"
+            }
+          },
+          "component": {
+            "id": "{{#? this.ServiceDetail.Component.id}}",
+            "name": "{{#? this.ServiceDetail.Component.name}}",
+            "description": "{{#? this.ServiceDetail.Component.description}}",
+            "createdAt": "{{#? this.ServiceDetail.Component.createdAt}}",
+            "updatedAt": "{{#? this.ServiceDetail.Component.updatedAt}}",
+            "status": "{{#? this.ServiceDetail.Component.status}}"
+          },
+          "activities": {
+            "{{#each this.ServiceDetail.Activities}}": {
+              "id": "{{#? this.id}}",
+              "name": "{{#? this.name}}",
+              "description": "{{#? this.description}}",
+              "estimatedTime": "{{#? this.estimatedTime}}",
+              "difficultyDegree": "{{#? this.difficultyDegree}}",
+              "createdAt": "{{#? this.createdAt}}",
+              "updatedAt": "{{#? this.updatedAt}}",
+              "status": "{{#? this.status}}"
+            }
+          },
+          "skills": {
+            "{{#each this.ServiceDetail.Skills}}": {
+              "id": "{{#? this.id}}",
+              "name": "{{#? this.name}}",
+              "description": "{{#? this.description}}",
+              "status": "{{#? this.status}}"
+            }
+          }
+        },
+        "policies": {
+          "{{#each this.ServiceDetail.Policies}}": {
+            "id": "{{#? this.id}}",
+            "name": "{{#? this.name}}",
+            "description": "{{#? this.description}}",
+            "actionPlan": "{{#? this.actionPlan}}",
+            "createdAt": "{{#? this.createdAt}}",
+            "updatedAt": "{{#? this.updatedAt}}",
+            "status": "{{#? this.status}}"
+          }
+        },
+        "calendars": {
+          "{{#each this.Calendars}}": {
+            "id": "{{#? this.id}}",
+            "type": "{{#? this.type}}",
+            "date": "{{#? this.date}}",
+            "turn": "{{#? this.turn}}",
+            "status": "{{#? this.status}}",
+            "lenders": {
+              "{{#each this.LenderCalendars}}": {
+                "id": "{{#? this.User.id}}",
+                "firstName": "{{#? this.User.firstName}}",
+                "lastName": "{{#? this.User.lastName}}",
+                "email": "{{#? this.User.email}}",
+                "role": "{{#? this.User.RoleId}}",
+                "status": "{{#? this.User.status}}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "bitacoras": {
+      "{{#each serviceOrder.Bitacoras}}": {
+        "id": "{{#? this.id}}",
+        "type": "{{#? this.type}}",
+        "eventType": "{{#? this.eventType}}",
+        "description": "{{#? this.description}}",
+        "status": "{{#? this.status}}",
+        "RevisionId": "{{#? this.RevisionId}}",
+        "ServiceOrderId": "{{#? this.ServiceOrderId}}",
+        "motive": {
+          "id": "{{#? this.Motive.id}}",
+          "name": "{{#? this.Motive.name}}",
+          "description": "{{#? this.Motive.description}}"
+        }
+      }
+		},
+		"activities": {
+      "{{#each serviceOrder.ServiceOrderActivities}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "done": "{{this.done}}"
+      }
+    }
+  }
+}

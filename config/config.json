@@ -1,0 +1,31 @@
+{
+	"development": {
+		"username": "watson",
+		"password": "watson",
+		"database": "watson_dev",
+		"host": "localhost",
+		"dialect": "postgres",
+		"omitNull": "true"
+	},
+	"test": {
+		"username": "watson",
+		"password": "watson",
+		"database": "watson_test",
+		"host": "localhost",
+		"dialect": "postgres",
+		"omitNull": "true"
+	},
+	"production": {
+		"use_env_variable": "DATABASE_URL",
+		"username": "process.env.DB_USERNAME",
+		"password": "process.env.DB_PASSWORD",
+		"database": "process.env.DB_NAME",
+		"host": "process.env.DB_HOSTNAME",
+		"dialect": "postgres",
+		"dialectOptions": {
+			"ssl": {
+			"require": true
+			}
+		}
+	}
+}

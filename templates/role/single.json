@@ -1,0 +1,27 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"role": {
+		"id": "{{#? role.id}}",
+		"name": "{{#? role.name}}",
+		"description": "{{#? role.description}}",
+		"status": "{{#? role.status}}",
+		"createdAt": "{{#? role.createdAt}}",
+		"updatedAt": "{{#? role.updatedAt}}",
+		"functions": {
+			"{{#each role.Functions}}": {
+				"id": "{{#? this.id}}",
+				"parentId": "{{#? this.parentId}}",
+				"title": "{{#? this.title}}",
+				"description": "{{#? this.description}}",
+				"entity": "{{#? this.entity}}",
+				"action": "{{#? this.action}}",
+				"urlIntranet": "{{#? this.urlIntranet}}",
+				"urlMobile": "{{#? this.urlMobile}}"
+			}
+		}
+	}
+}

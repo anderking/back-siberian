@@ -1,0 +1,53 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"parameters": {
+		"{{#each parameters}}": {
+			"id": "{{#? this.id}}",
+			"name": "{{#? this.name}}",
+			"description": "{{#? this.description}}",
+			"status": "{{#? this.status}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"updatedAt": "{{#? this.updatedAt}}",
+			"group": {
+				"id": "{{#? this.Group.id}}",
+				"name": "{{#? this.Group.name}}",
+				"description": "{{#? this.Group.description}}",
+				"status": "{{#? this.Group.status}}",
+				"createdAt": "{{#? this.Group.createdAt}}",
+				"updatedAt": "{{#? this.Group.updatedAt}}"
+			},
+			"users": {
+				"{{#each this.Users}}": {
+					"id": "{{#? this.id}}",
+					"firstName": "{{#? this.firstName}}",
+					"lastName": "{{#? this.lastName}}",
+					"imageUrl": "{{#? this.imageUrl}}",
+					"gender": "{{#? this.gender}}",
+					"note": "{{#? this.note}}",
+					"status": "{{#? this.status}}",
+					"createdAt": "{{#? this.createdAt}}",
+					"updatedAt": "{{#? this.updatedAt}}"
+				}
+			},
+			"promotions": {
+				"{{#each this.Promotions}}": {
+					"id": "{{#? this.id}}",
+					"name": "{{#? this.name}}",
+					"description": "{{#? this.description}}",
+					"type": "{{#? this.type}}",
+					"percentDiscount": "{{#? this.percentDiscount}}",
+					"dateStart": "{{#? this.dateStart}}",
+					"dateEnd": "{{#? this.dateEnd}}",
+					"imageUrl": "{{#? this.imageUrl}}",
+					"status": "{{#? this.status}}",
+					"createdAt": "{{#? this.createdAt}}",
+					"updatedAt": "{{#? this.updatedAt}}"
+				}
+			}
+		}
+	}
+}

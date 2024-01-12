@@ -1,0 +1,26 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"category": {
+		"id": "{{#? Category.id}}",
+		"name": "{{#? Category.name}}",
+		"description": "{{#? Category.description}}",
+		"imageUrl": "{{#? Category.imageUrl}}",
+		"status": "{{#? Category.status}}",
+		"createdAt": "{{#? Category.createdAt}}",
+		"updatedAt": "{{#? Category.updatedAt}}",
+		"subcategories": {
+			"{{#each Category.Subcategories}}": {
+				"id": "{{#? this.id}}",
+				"name": "{{#? this.name}}",
+				"description": "{{#? this.description}}",
+				"status": "{{#? this.status}}",
+				"createdAt": "{{#? this.createdAt}}",
+				"updatedAt": "{{#? this.updatedAt}}"
+			}
+		}
+	}
+}

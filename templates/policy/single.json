@@ -1,0 +1,29 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "policy": {
+		"id": "{{#? policy.id}}",
+		"name": "{{#? policy.name}}",
+    "description": "{{#? policy.description}}",
+    "actionPlan": "{{#? policy.actionPlan}}",
+    "createdAt": "{{#? policy.createdAt}}",
+    "updatedAt": "{{#? policy.updatedAt}}",
+    "status": "{{#? policy.status}}",
+    "serviceDetails": {
+      "{{#each policy.ServiceDetails}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "serviceType": "{{#? this.serviceType}}",
+        "estimatedPrice": "{{#? this.estimatedPrice}}",
+        "estimatedWarrantyTime": "{{#? this.estimatedWarrantyTime}}",
+        "note": "{{#? this.note}}",
+        "createdAt": "{{#? this.createdAt}}",
+        "updatedAt": "{{#? this.updatedAt}}",
+        "status": "{{#? this.status}}"
+      }
+    }
+	}
+}

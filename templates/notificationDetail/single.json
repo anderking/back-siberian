@@ -1,0 +1,15 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"notificationDetail": {
+		"id": "{{#? notificationDetail.id}}",
+		"name": "{{#? notificationDetail.name}}",
+		"message": "{{#? notificationDetail.message}}",
+		"status": "{{#? notificationDetail.status}}",
+		"createdAt": "{{#? notificationDetail.createdAt}}",
+		"updatedAt": "{{#? notificationDetail.updatedAt}}"
+	}
+}

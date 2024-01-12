@@ -1,0 +1,85 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "qualification": {
+		"id": "{{#? qualification.id}}",
+    "createdAt": "{{#? qualification.createdAt}}",
+    "updatedAt": "{{#? qualification.updatedAt}}",
+    "typeQualification": "{{#? qualification.typeQualification}}",
+    "status": "{{#? qualification.status}}",
+    "author": {
+      "id": "{{#? qualification.Author.id}}",
+      "firstName": "{{#? qualification.Author.firstName}}",
+      "lastName": "{{#? qualification.Author.lastName}}",
+      "email": "{{#? qualification.Author.email}}",
+      "imageUrl": "{{#? qualification.Author.imageUrl}}",
+      "status": "{{#? qualification.Author.status}}"
+    },
+    "user": {
+      "id": "{{#? qualification.User.id}}",
+      "firstName": "{{#? qualification.User.firstName}}",
+      "lastName": "{{#? qualification.User.lastName}}",
+      "email": "{{#? qualification.User.email}}",
+      "imageUrl": "{{#? qualification.User.imageUrl}}",
+      "status": "{{#? qualification.User.status}}"
+    },
+    "serviceDetail": {
+      "id": "{{#? qualification.ServiceDetail.id}}",
+      "name": "{{#? qualification.ServiceDetail.name}}",
+      "serviceType": "{{#? qualification.ServiceDetail.serviceType}}",
+      "status": "{{#? qualification.ServiceDetail.status}}",
+      "component": {
+        "id": "{{#? qualification.ServiceDetail.Component.id}}",
+        "name": "{{#? qualification.ServiceDetail.Component.name}}",
+        "description": "{{#? qualification.ServiceDetail.Component.description}}",
+        "status": "{{#? qualification.ServiceDetail.Component.status}}"
+      }
+    },
+    "questions": {
+      "{{#each qualification.Questions }}": {
+        "id": "{{#? this.id}}",
+        "enquire": "{{#? this.enquire}}",
+        "description": "{{#? this.description}}",
+        "createdAt": "{{#? this.createdAt}}",
+        "updatedAt": "{{#? this.updatedAt}}",
+        "status": "{{#? this.status}}",
+        "points": "{{#? this.QualificationQuestion.points}}"
+      }
+    },
+    "serviceOrderDetail": {
+      "id": "{{#? qualification.ServiceOrderDetail.id}}",
+      "serviceDetail": {
+        "id": "{{#? qualification.ServiceOrderDetail.ServiceDetail.id}}",
+        "name": "{{#? qualification.ServiceOrderDetail.ServiceDetail.name}}",
+        "serviceType": "{{#? qualification.ServiceOrderDetail.ServiceDetail.serviceType}}",
+        "status": "{{#? qualification.ServiceOrderDetail.ServiceDetail.status}}",
+        "component": {
+          "id": "{{#? qualification.ServiceOrderDetail.ServiceDetail.Component.id}}",
+          "name": "{{#? qualification.ServiceOrderDetail.ServiceDetail.Component.name}}",
+          "description": "{{#? qualification.ServiceOrderDetail.ServiceDetail.Component.description}}",
+          "status": "{{#? qualification.ServiceOrderDetail.ServiceDetail.Component.status}}"
+        }
+      },
+      "serviceOrder": {
+        "id": "{{#? qualification.ServiceOrderDetail.ServiceOrder.id}}",
+        "code": "{{#? qualification.ServiceOrderDetail.ServiceOrder.code}}",
+        "status": "{{#? qualification.ServiceOrder.status}}",
+        "revision": {
+          "id": "{{#? qualification.ServiceOrderDetail.ServiceOrder.Revision.id}}",
+          "description": "{{#? qualification.ServiceOrderDetail.ServiceOrder.Revision.description}}",
+          "imageRequestUrl": "{{#? qualification.ServiceOrderDetail.ServiceOrder.Revision.imageRequestUrl}}",
+          "createdAt": "{{#?  qualification.ServiceOrder.Revision.createdAt}}",
+          "status": "{{#?  qualification.ServiceOrder.Revision.status}}"
+        }
+      },
+      "duration": "{{#? qualification.ServiceOrderDetail.duration}}",
+      "numberWorkers": "{{#? qualification.ServiceOrderDetail.numberWorkers}}",
+      "createdAt": "{{#? qualification.ServiceOrderDetail.createdAt}}",
+      "updatedAt": "{{#? qualification.ServiceOrderDetail.updatedAt}}",
+      "status": "{{#? qualification.ServiceOrderDetail.status}}"
+    }
+  }
+}

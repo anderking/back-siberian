@@ -1,0 +1,171 @@
+{
+	"G0": "Error de conexión con el servidor.",
+	"G1": " no puede estar vacío.",
+	"G2": " no puede estar vacía.",
+	"G3": " debe contener solo letras.",
+	"G4": " debe contener solo números.",
+	"G5": " debe contener solo letras o números.",
+	"G6": " debe contener solo letras o símbolos.",
+	"G7": " debe contener solo números o símbolos.",
+	"G8": "Correo no válido.",
+	"G9": "La contraseña debe tener mínimo 6 carácteres.",
+	"G10": " debe contener entre",
+	"G13": " debe contener máximo 2000 caracteres",
+	"G14": "Debe proporcionar una imagen.",
+	"G18": "Error al realizar la solicitud",
+	"G19": "No hay resultados",
+
+	"token0": "No se proporcionó un token.",
+	"token1": "El token no es válido.",
+
+	"createdF": " creada exitosamente.",
+	"updatedF": " modificada exitosamente.",
+	"deletedF": " eliminada exitosamente.",
+	"blockedF": " bloqueada exitosamente.",
+	"unblockedF": " desbloqueada exitosamente.",
+	"activatedF": " activada exitosamente.",
+	"deactivatedF": " desactivada exitosamente.",
+	"assignedF": " asignada exitosamente.",
+
+	"createdM": " creado exitosamente.",
+	"updatedM": " modificado exitosamente.",
+	"deletedM": " eliminado exitosamente.",
+	"blockedM": " bloqueado exitosamente.",
+	"unblockedM": " desbloqueado exitosamente.",
+	"activatedM": " activado exitosamente.",
+	"deactivatedM": " desactivado exitosamente.",
+	"assignedM": " asignado exitosamente.",
+
+	"user01": "El usuario ya existe.",
+	"user02": "El usuario no existe.",
+	"user03": "Contraseña incorrecta.",
+	"user04": "Sesión iniciada correctamente.",
+	"user05": "El usuario no es cliente.",
+
+
+	"lender01": "El usuario no es prestador",
+
+	"role01": "El rol ya existe.",
+	"role02": "No existen roles registrados.",
+	"role03": "El rol no existe.",
+	"role04": "Funciones modificadas exitosamente.",
+	"role05": "No existe un rol para registrar clientes.",
+
+	"location01": "La dirección no existe",
+	"location02": "No existen direcciones registradas.",
+
+	"phone01": "Teléfonos actualizados exitosamente.",
+	"phone02": "No existen teléfonos registrados.",
+
+	"company01": "Ya existe una compañía registrada en el sistema.",
+	"company02": "No existe una compañía registrada en el sistema.",
+
+	"category01": "La categoría no existe.",
+	"category02": "No existen categorías registradas.",
+
+	"subcategory01": "La subcategoría no existe.",
+	"subcategory02": "No existen subcategorías registradas.",
+
+	"equipinfras01": "El servicio no existe.",
+	"equipinfras02": "No existen servicios registrados.",
+
+	"variety01": "La variedad no existe.",
+	"variety02": "No existen variedades de servicio registradas.",
+
+	"varietyEquipinfras01": "La variedad no existe para el servicio.",
+	"varietyEquipinfras02": "No existen variedades registradas para el servicio.",
+	"varietyEquipinfras03": "La variedad ya existe para el servicio.",
+
+	"varietyDetail01": "El detalle de variedad no existe.",
+	"varietyDetail02": "No existen detalles de variedad registrados.",
+
+	"policy01": "La política no existe.",
+
+	"resource01": "El recurso no existe.",
+
+	"activity01": "La actividad no existe.",
+
+	"component01": "El componente no existe.",
+
+	"serviceDetail01": "El detalle servicio no existe.",
+
+	"Calendar01": "No existen calendarios para el rango de Fechas",
+	"Calendar02": "El Prestador, esta ocupado en esta fecha y turno",
+	"Calendar03": "No puede agendar, sin los detalles del Calendario.",
+	"Calendar04": "No existen Prestadores disponibles para la Fecha y Turno.",
+	"Calendar05": "Este Calendario no existe.",
+	"Calendar06": "No se puede reagendar este Calendario, no se encuentra Cancelado.",
+	"Calendar07": "No se puede cancelar, un calendario previamente ejecutado.",
+	"Calendar08": "No se puede cancelar, un calendario previamente cancelado.",
+	"Calendar09": "No se puede reagendar, un calendario previamente ejecutado, debe estar cancelado.",
+	"Calendar10": "No se puede reagendar, un calendario previamente agendado, debe estar cancelado.",
+
+	"revision01": "La revisión no existe.",
+	"revision02": "La revisión no puede ser aprobada, su estatus actual es distinto a solicitado.",
+	"revision03": "La revisión no puede ser rechazada, su estatus actual es distinto a solicitado.",
+	"revision04": "La revisión no puede ser diagnosticada, su estatus actual es distinto a aprovado.",
+	"revision05": "La revisión no puede ser cancelada, su estatus actual es distinto a solicitado o aprovado.",
+	"revision06": "La revisión no puede ser finalizada, su estatus actual es distinto a diagnosticado.",
+	"revision07": "La revisión no puede ser creada, aun no existe una compañía registrada en el sistema.",
+	"revision08": "La revicion no puede ser creada sin los detalles del Calendario",
+	"revision10": "No existen registros de Revision registradas para este Prestador",
+	"revision09": "La revisión no puede ser irreparable, su estatus actual es distinto a diagnosticado.",
+	"revision11": "La solicitud no puede ser procesada, debe enviar el ID del orden de servicio relacionado.",
+	"revision12": "La solicitud de garantia no puede ser procesada, la orden de servicio no esta en estatus de garantía o no existe.",
+
+	"revisionApproved": " aprobada exitosamente.",
+	"revisionRejected": " rechazada exitosamente.",
+	"revisionIrreparable": " marcada como irreparable exitosamente.",
+	"revisionDiagnosticated": " diagnosticada exitosamente.",
+	"revisionCancelled": " cancelada exitosamente.",
+
+	"serviceOrder01": "La orden de servicio no existe.",
+	"serviceOrder02": "La orden de servicio no puede ser aprobada, su estatus actual es distinto a presupuestada.",
+	"serviceOrder03": "La orden de servicio no puede ser rechazada, su estatus actual es distinto a presupuestada.",
+	"serviceOrder04": "La orden de servicio no puede entrar en garantía, su estatus actual es distinto a completado.",
+	"serviceOrder05": "La orden de servicio no puede ser cancelada, su estatus actual es distinto a presupuestada.",
+	"serviceOrder06": "La orden de servicio no puede ser finalizada, su estatus actual es distinto a en garantía.",
+	"serviceOrder07": "La orden de servicio no puede entrar en garantía, no se ha especificado una razón.",
+	"serviceOrder08": "La orden de servicio no puede ser creada si no se específica a que revisión pertenece",
+	"serviceOrder09": "La orden de servicio no puede ser creada sin los detalles de la orden de servicio.",
+	"serviceOrder10": "La orden de servicio no puede ser completada, su estatus actual es distinto a aprovado.",
+	"serviceOrder11": "La orden de servicio no puede ser aprobada, sin especificar correctamente los servicios y las fechas en el calendario.",
+	"serviceOrder12": "La orden de servicio no puede ser aprobada, sin agendar los días especificados en la duración.",
+	"serviceOrder13": "La orden de servicio no puede ser actualizada, su estatus actual es distinto a presupuestada.",
+	"serviceOrderApproved": " aprobada exitosamente.",
+	"serviceOrderRejected": " rechazada exitosamente.",
+	"serviceOrderWarrantied": " entra en garantía exitosamente.",
+	"serviceOrderCancelled": " cancelada exitosamente.",
+	"serviceOrderCompleted": " completada exitosamente.",
+
+	"skill01": "La habilidad no existe.",
+
+	"qualification01": "La calificación no existe.",
+	"qualification02": "No se puede crear una calificación, sin especificar si es para un usuario o un servicio.",
+	"qualification03": "No se puede crear una calificación, la orden de servicio aun no esta en garantía o finalizada.",
+	"qualification04": "No se puede crear una calificación, el detalle de orden de servicio no existe.",
+	"qualification05": "No se puede crear una calificación, sin especificar un autor.",
+	"qualification06": "No se puede crear una calificación, sin especificar un detalle de orden de servicio.",
+	"qualification07": "No se puede crear una calificación, sin especificar las preguntas relaciondas",
+
+	"motive01": "El Motivo no existe.",
+	"motive02": "No existen Motives registrados.",
+
+	"group01": "El Grupos no existe.",
+	"group02": "No existen Grupos registrados.",
+
+	"parameter01": "El Parametro no existe.",
+	"parameter02": "No existen Parametros registrados.",
+
+	"promotion01": "La Promocion no existe.",
+	"promotion02": "No existen Promociones registradas.",
+	"promotion03": "Este tipo de promocion 'Generica', no acepta parametros.",
+	"promotion04": "No existen promociones para esta Subcategoria.",
+	"promotion05": "No existen promociones para este Equipo o Infraestructura.",
+	"promotion06": "No existen promociones para este Equipo o Infraestructura, que aplique a su usuario.",
+
+	"notificationDetail03": "La notificación no existe.",
+	"notificationDetail02": "No existen notificaciones registradas.",
+
+	"question01": "La pregunta no existe."
+}

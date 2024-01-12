@@ -1,0 +1,32 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "activities": {
+		"{{#each activities}}": {
+			"id": "{{#? this.id}}",
+      "name": "{{#? this.name}}",
+      "description": "{{#? this.description}}",
+      "estimatedTime": "{{#? this.estimatedTime}}",
+      "difficultyDegree": "{{#? this.difficultyDegree}}",
+      "createdAt": "{{#? this.createdAt}}",
+      "updatedAt": "{{#? this.updatedAt}}",
+      "status": "{{#? this.status}}",
+      "serviceDetails": {
+        "{{#each this.ServiceDetails}}": {
+          "id": "{{#? this.id}}",
+          "name": "{{#? this.name}}",
+          "serviceType": "{{#? this.serviceType}}",
+          "estimatedPrice": "{{#? this.estimatedPrice}}",
+          "estimatedWarrantyTime": "{{#? this.estimatedWarrantyTime}}",
+          "note": "{{#? this.note}}",
+          "createdAt": "{{#? this.createdAt}}",
+          "updatedAt": "{{#? this.updatedAt}}",
+          "status": "{{#? this.status}}"
+        }
+      }
+		}
+	}
+}

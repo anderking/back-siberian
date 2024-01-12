@@ -1,0 +1,14 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "serviceDetails": {
+		"{{#each serviceDetails}}": {
+      "serviceType": "{{#? this.serviceType }}",
+      "equipInfra": "{{#? this.equipInfra }}",
+      "count": "{{#? this.count }}"
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"users": {
+		"{{#each users}}": {
+			"id": "{{#? this.id}}",
+			"firstName": "{{#? this.firstName}}",
+			"lastName": "{{#? this.lastName}}",
+			"imageUrl": "{{#? this.imageUrl}}",
+			"gender": "{{#? this.gender}}",
+			"note": "{{#? this.note}}",
+			"status": "{{#? this.status}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"updatedAt": "{{#? this.updatedAt}}",
+			"skills": {
+				"{{#each Skills}}": {
+					"id": "{{#? this.id}}",
+					"name": "{{#? this.name}}",
+					"description": "{{#? this.description}}",
+					"status": "{{#? this.status}}",
+					"experienceYears": "{{#? this.SkillsLenders.experienceYears}}"
+				}
+			}
+		}
+	}
+}

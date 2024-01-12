@@ -1,0 +1,16 @@
+{
+	"status": true,
+	"message" : { 
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+	"location": {
+		"id": "{{#? location.id}}",
+		"address": "{{#? location.address}}",
+		"state": "{{#? location.state}}",
+		"city": "{{#? location.city}}",
+		"postalCode": "{{#? location.postalCode}}",
+		"isLivingPlace": "{{#? location.isLivingPlace}}",
+		"UserId": "{{#? location.UserId}}"
+	}
+}

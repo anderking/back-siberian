@@ -1,0 +1,26 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"varietyDetail": {
+		"id": "{{#? varietyDetail.id}}",
+		"name": "{{#? varietyDetail.name}}",
+		"description": "{{#? varietyDetail.description}}",
+		"VarietyEquipinfraId": "{{#? varietyDetail.VarietyEquipinfraId}}",
+		"createdAt": "{{#? varietyDetail.createdAt}}",
+		"updatedAt": "{{#? varietyDetail.updatedAt}}",
+		"serviceDetail": {
+			"{{#each varietyDetail.ServiceDetails}}": {
+				"id": "{{#? this.id}}",
+				"name": "{{#? this.name}}",
+				"serviceType": "{{#? this.serviceType}}",
+				"estimatedPrice": "{{#? this.estimatedPrice}}",
+				"estimatedWarrantyTime": "{{#? this.estimatedWarrantyTime}}",
+				"note": "{{#? this.note}}",
+				"status": "{{#? this.status}}"
+			}
+		}
+	}
+}

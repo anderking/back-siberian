@@ -1,0 +1,29 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"users": {
+		"{{#each users}}": {
+			"id": "{{#? this.id}}",
+			"email": "{{#? this.email}}",
+			"firstName": "{{#? this.firstName}}",
+			"lastName": "{{#? this.lastName}}",
+			"dni": "{{#? this.dni}}",
+			"dniType": "{{#? this.dniType}}",
+			"dateOfBirth": "{{#? this.dateOfBirth}}",
+			"imageUrl": "{{#? this.imageUrl}}",
+			"gender": "{{#? this.gender}}",
+			"note": "{{#? this.note}}",
+			"status": "{{#? this.status}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"updatedAt": "{{#? this.updatedAt}}",
+			"role": {
+				"id": "{{#? this.Role.id}}",
+				"name": "{{#? this.Role.name}}",
+				"description": "{{#? this.Role.description}}"
+			}
+		}
+	}
+}

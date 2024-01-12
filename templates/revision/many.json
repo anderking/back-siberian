@@ -1,0 +1,100 @@
+{
+  "status": true,"message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "revisions": {
+		"{{#each revisions}}": {
+			"id": "{{#? this.id}}",
+      "description": "{{#? this.description}}",
+      "imageRequestUrl": "{{#? this.imageRequestUrl}}",
+      "note": "{{#? this.note}}",
+      "price": "{{#? this.price}}",
+      "imageRevisionUrl": "{{#? this.imageRevisionUrl}}",
+      "numberWorkers": "{{#? this.numberWorkers}}",
+      "numberDays": "{{#? this.numberDays}}",
+      "isForGuarantee": "{{#? this.isForGuarantee}}",
+      "createdAt": "{{#? this.createdAt}}",
+      "updatedAt": "{{#? this.updatedAt}}",
+      "status": "{{#? this.status}}",
+      "user": {
+        "id": "{{#? this.User.id}}",
+        "email": "{{#? this.User.email}}",
+        "firstName": "{{#? this.User.firstName}}",
+        "lastName": "{{#? this.User.lastName}}",
+        "dni": "{{#? this.User.dni}}",
+        "dniType": "{{#? this.User.dniType}}",
+        "dateOfBirth": "{{#? this.User.dateOfBirth}}",
+        "imageUrl": "{{#? this.User.imageUrl}}",
+        "gender": "{{#? this.User.gender}}",
+        "note": "{{#? this.User.note}}",
+        "status": "{{#? this.User.status}}"
+      },
+      "varietyDetail": {
+        "id": "{{#? this.VarietyDetail.id}}",
+        "name": "{{#? this.VarietyDetail.name}}",
+        "description": "{{#? this.VarietyDetail.description}}",
+        "varietyEquipinfraId":"{{#? this.VarietyDetail.VarietyEquipinfraId}}",
+        "variety": {
+          "id": "{{#? this.VarietyDetail.VarietyEquipinfra.Variety.id}}",
+          "name": "{{#? this.VarietyDetail.VarietyEquipinfra.Variety.name}}"
+        },
+        "Equipinfra": {
+          "id": "{{#? this.VarietyDetail.VarietyEquipinfra.Equipinfra.id}}",
+          "name": "{{#? this.VarietyDetail.VarietyEquipinfra.Equipinfra.name}}"
+        }
+      },
+      "location": {
+        "id": "{{#? this.Location.id}}",
+        "address": "{{#? this.Location.address}}",
+        "state": "{{#? this.Location.state}}",
+        "city": "{{#? this.Location.city}}",
+        "postalCode": "{{#? this.Location.postalCode}}",
+        "isLivingPlace": "{{#? this.Location.isLivingPlace}}",
+        "UserId": "{{#? this.Location.UserId}}"
+      },
+      "calendars": {
+          "id": "{{#? this.Calendars[0].id}}",
+          "type": "{{#? this.Calendars[0].type}}",
+          "date": "{{#? this.Calendars[0].date}}",
+          "turn": "{{#? this.Calendars[0].turn}}",
+          "status": "{{#? this.Calendars[0].status}}",
+          "lenders": {
+            "id": "{{#? this.Calendars[0].LenderCalendars[0].User.id}}",
+            "firstName": "{{#? this.Calendars[0].LenderCalendars[0].User.firstName}}",
+            "lastName": "{{#? this.Calendars[0].LenderCalendars[0].User.lastName}}",
+            "email": "{{#? this.Calendars[0].LenderCalendars[0].User.email}}",
+            "role": "{{#? this.Calendars[0].LenderCalendars[0].User.RoleId}}",
+            "status": "{{#? this.Calendars[0].LenderCalendars[0].User.status}}"
+          }
+      },
+      "bitacoras": {
+        "{{#each this.Bitacoras}}": {
+            "id": "{{#? this.id}}",
+            "type": "{{#? this.type}}",
+            "eventType": "{{#? this.eventType}}",
+            "description": "{{#? this.description}}",
+            "status": "{{#? this.status}}",
+            "RevisionId": "{{#? this.RevisionId}}",
+            "ServiceOrderId": "{{#? this.ServiceOrderId}}",
+            "motive": {
+              "id": "{{#? this.Motive.id}}",
+              "name": "{{#? this.Motive.name}}",
+              "description": "{{#? this.Motive.description}}"
+            }
+          }
+        },
+        "promotion": {
+          "id": "{{#? this.Promotion.id}}",
+          "name": "{{#? this.Promotion.name}}",
+          "description": "{{#? this.Promotion.description}}",
+          "type": "{{#? this.Promotion.type}}",
+          "dateStart": "{{#? this.Promotion.dateStart}}",
+          "dateEnd": "{{#? this.Promotion.dateEnd}}",
+          "percentDiscount": "{{#? this.Promotion.percentDiscount}}",
+          "imageUrl": "{{#? this.Promotion.imageUrl}}",
+          "status": "{{#? this.Promotion.status}}"
+        }
+    }
+	}
+}

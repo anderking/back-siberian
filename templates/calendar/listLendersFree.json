@@ -1,0 +1,27 @@
+{
+    "status": true,
+    "message" : {
+      "code" : "{{#? message.code}}",
+      "text" : "{{#? message.text}}"
+    },
+    "lenders": {
+        "{{#each lendersCalendar}}": {
+        "id": "{{#? this.id}}",
+        "firstName": "{{#? this.firstName}}",
+        "lastName": "{{#? this.lastName}}",
+        "email": "{{#? this.email}}",
+        "imageUrl": "{{#? this.imageUrl}}",
+        "role": "{{#? this.RoleId}}",
+        "status": "{{#? this.status}}",
+        "skills": {
+        "{{#each this.Skills}}": {
+            "id": "{{#? this.id}}",
+            "name": "{{#? this.name}}",
+            "description": "{{#? this.description}}",
+            "status": "{{#? this.status}}",
+            "experienceYears": "{{ this.SkillsLenders.experienceYears}}"
+        }
+        }
+    }
+}
+}

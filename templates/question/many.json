@@ -1,0 +1,18 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "questions": {
+		"{{#each questions}}": {
+			"id": "{{#? this.id}}",
+      "enquire": "{{#? this.enquire}}",
+      "description": "{{#? this.description}}",
+      "kind": "{{#? this.kind}}",
+      "createdAt": "{{#? this.createdAt}}",
+      "updatedAt": "{{#? this.updatedAt}}",
+      "status": "{{#? this.status}}"
+		}
+	}
+}

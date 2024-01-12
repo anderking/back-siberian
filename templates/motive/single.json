@@ -1,0 +1,15 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"motive": {
+		"id": "{{#? Motive.id}}",
+		"name": "{{#? Motive.name}}",
+		"description": "{{#? Motive.description}}",
+		"status": "{{#? Motive.status}}",
+		"createdAt": "{{#? Motive.createdAt}}",
+		"updatedAt": "{{#? Motive.updatedAt}}"
+	}
+}

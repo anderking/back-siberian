@@ -1,0 +1,27 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"groups": {
+		"{{#each groups}}": {
+			"id": "{{#? this.id}}",
+			"name": "{{#? this.name}}",
+			"description": "{{#? this.description}}",
+			"status": "{{#? this.status}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"updatedAt": "{{#? this.updatedAt}}",
+			"parameters": {
+				"{{#each this.Parameters}}": {
+					"id": "{{#? this.id}}",
+					"name": "{{#? this.name}}",
+					"description": "{{#? this.description}}",
+					"status": "{{#? this.status}}",
+					"createdAt": "{{#? this.createdAt}}",
+					"updatedAt": "{{#? this.updatedAt}}"
+				}
+			}
+		}
+	}
+}

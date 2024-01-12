@@ -1,0 +1,19 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"equipinfras": {
+		"{{#each Equipinfras}}": {
+			"id": "{{#? this.id}}",
+			"name": "{{#? this.name}}",
+			"type": "{{#? this.type}}",
+			"imageUrl": "{{#? this.imageUrl}}",
+			"description": "{{#? this.description}}",
+			"status": "{{#? this.status}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"updatedAt": "{{#? this.updatedAt}}"
+		}
+	}
+}

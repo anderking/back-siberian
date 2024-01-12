@@ -1,0 +1,24 @@
+{
+    "status": true,
+    "message" : { 
+      "code" : "{{#? message.code}}",
+      "text" : "{{#? message.text}}"
+    },
+    "calendar": {
+        "id": "{{#? this.calendar.id}}",
+        "type": "{{#? this.calendar.type}}",
+        "date": "{{#? this.calendar.date}}",
+        "turn": "{{#? this.calendar.turn}}",
+        "status": "{{#? this.calendar.status}}",
+        "lender": {
+          "{{#each calendar.LenderCalendars}}": {
+              "id": "{{#? this.User.id}}",
+              "firstName": "{{#? this.User.firstName}}",
+              "lastName": "{{#? this.User.lastName}}",
+              "email": "{{#? this.User.email}}",
+              "role": "{{#? this.User.RoleId}}",
+              "status": "{{#? this.User.status}}"
+            }   
+      }
+    }
+  }

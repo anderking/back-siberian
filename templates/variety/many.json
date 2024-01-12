@@ -1,0 +1,42 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"varieties": {
+		"{{#each varieties}}": {
+			"id": "{{#? this.id}}",
+			"name": "{{#? this.name}}",
+			"image_url": "{{#? this.image_url}}",
+			"description": "{{#? this.description}}",
+			"status": "{{#? this.status}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"updatedAt": "{{#? this.updatedAt}}",
+			"equipinfras": {
+				"{{#each VarietyEquipinfras}}": {
+					"id": "{{#? this.Equipinfra.id}}",
+					"name": "{{#? this.Equipinfra.name}}",
+					"type": "{{#? this.Equipinfra.type}}",
+					"description": "{{#? this.Equipinfra.description}}",
+					"VarietyEquipinfras_id": "{{#? this.id}}",
+					"subcategory": {
+						"id": "{{#? this.Equipinfra.Subcategory.id}}",
+						"name": "{{#? this.Equipinfra.Subcategory.name}}",
+						"description": "{{#? this.Equipinfra.Subcategory.description}}",
+						"status": "{{#? this.Equipinfra.Subcategory.status}}"
+					},
+					"varietyDetails": {
+						"{{#each VarietyDetails}}": {
+							"id": "{{#? this.id}}",
+							"name": "{{#? this.name}}",
+							"description": "{{#? this.description}}",
+							"status": "{{#? this.status}}",
+							"VarietyEquipinfras_id": "{{#? this.VarietyEquipinfraId}}"
+						}
+					}
+				}
+			}
+		}
+	}
+}

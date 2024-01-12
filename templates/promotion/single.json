@@ -1,0 +1,42 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"promotions": {
+		"id": "{{#? this.Promotion.id}}",
+		"name": "{{#? this.Promotion.name}}",
+		"description": "{{#? this.Promotion.description}}",
+		"type": "{{#? this.Promotion.type}}",
+		"percentDiscount": "{{#? this.Promotion.percentDiscount}}",
+		"dateStart": "{{#? this.Promotion.dateStart}}",
+		"dateEnd": "{{#? this.Promotion.dateEnd}}",
+		"imageUrl": "{{#? this.Promotion.imageUrl}}",
+		"status": "{{#? this.Promotion.status}}",
+		"createdAt": "{{#? this.Promotion.createdAt}}",
+		"updatedAt": "{{#? this.Promotion.updatedAt}}",
+		"equipinfras": {
+			"id": "{{#? this.Promotion.Equipinfra.id}}",
+			"name": "{{#? this.Promotion.Equipinfra.name}}",
+			"type": "{{#? this.Promotion.Equipinfra.type}}",
+			"imageUrl": "{{#? this.Promotion.Equipinfra.imageUrl}}",
+			"description": "{{#? this.Promotion.Equipinfra.description}}",
+			"status": "{{#? this.Promotion.Equipinfra.status}}"
+		},
+		"subcategory": {
+			"id": "{{#? this.Promotion.Subcategory.id}}",
+			"name": "{{#? this.Promotion.Subcategory.name}}",
+			"description": "{{#? this.Promotion.Subcategory.description}}",
+			"status": "{{#? this.Promotion.Subcategory.status}}"
+		},
+		"parameters": {
+			"{{#each this.Promotion.Parameters}}": {
+				"id": "{{#? this.id}}",
+				"name": "{{#? this.name}}",
+				"description": "{{#? this.description}}",
+				"status": "{{#? this.status}}"
+			}
+		}
+	}
+}

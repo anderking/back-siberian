@@ -1,0 +1,23 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"notifications": {
+		"{{#each notifications}}": {
+			"id": "{{#? this.id}}",
+			"UserId": "{{#? this.UserId}}",
+			"PromotionId": "{{#? this.PromotionId}}",
+			"BitacoraId": "{{#? this.BitacoraId}}",
+			"createdAt": "{{#? this.createdAt}}",
+			"read": "{{#? this.read}}",
+			"notificationDetail": {
+				"id": "{{#? NotificationDetail.id}}",
+				"name": "{{#? NotificationDetail.name}}",
+				"message": "{{#? NotificationDetail.message}}",
+				"status": "{{#? NotificationDetail.status}}"
+			}
+		}
+	}
+}

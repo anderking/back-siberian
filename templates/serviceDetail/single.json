@@ -1,0 +1,81 @@
+{
+  "status": true,
+  "message" : {
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+  "serviceDetail": {
+		"id": "{{#? serviceDetail.id}}",
+		"name": "{{#? serviceDetail.name}}",
+    "serviceType": "{{#? serviceDetail.serviceType}}",
+    "estimatedPrice": "{{#? serviceDetail.estimatedPrice}}",
+    "estimatedWarrantyTime": "{{#? serviceDetail.estimatedWarrantyTime}}",
+    "note": "{{#? serviceDetail.note}}",
+    "createdAt": "{{#? serviceDetail.createdAt}}",
+    "updatedAt": "{{#? serviceDetail.updatedAt}}",
+    "status": "{{#? serviceDetail.status}}",
+    "component": {
+      "id": "{{#? serviceDetail.Component.id}}",
+      "name": "{{#? serviceDetail.Component.name}}",
+      "description": "{{#? serviceDetail.Component.description}}",
+      "createdAt": "{{#? serviceDetail.Component.createdAt}}",
+      "updatedAt": "{{#? serviceDetail.Component.updatedAt}}",
+      "status": "{{#? serviceDetail.Component.status}}"
+    },
+    "activities": {
+      "{{#each serviceDetail.Activities}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "description": "{{#? this.description}}",
+        "estimatedTime": "{{#? this.estimatedTime}}",
+        "difficultyDegree": "{{#? this.difficultyDegree}}",
+        "createdAt": "{{#? this.createdAt}}",
+        "updatedAt": "{{#? this.updatedAt}}",
+        "status": "{{#? this.status}}"
+      }
+    },
+    "skills": {
+      "{{#each serviceDetail.Skills}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "description": "{{#? this.description}}",
+        "status": "{{#? this.status}}"
+      }
+    },
+    "resources": {
+      "{{#each serviceDetail.Resources}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "description": "{{#? this.description}}",
+        "resourceType": "{{#? this.resourceType}}",
+        "measureUnit": "{{#? this.measureUnit}}",
+        "price": "{{#? this.price}}",
+        "createdAt": "{{#? this.createdAt}}",
+        "updatedAt": "{{#? this.updatedAt}}",
+        "status": "{{#? this.status}}",
+        "quantity": "{{#? this.ServiceDetailResource.quantity}}"
+      }
+    },
+    "policies": {
+      "{{#each serviceDetail.Policies}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "description": "{{#? this.description}}",
+        "actionPlan": "{{#? this.actionPlan}}",
+        "createdAt": "{{#? this.createdAt}}",
+        "updatedAt": "{{#? this.updatedAt}}",
+        "status": "{{#? this.status}}"
+      }
+    },
+    "varietyDetails": {
+      "{{#each serviceDetail.VarietyDetails}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "description": "{{#? this.description}}",
+        "createdAt": "{{#? this.createdAt}}",
+        "updatedAt": "{{#? this.updatedAt}}",
+        "status": "{{#? this.status}}"
+      }
+    }
+	}
+}

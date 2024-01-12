@@ -1,0 +1,53 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"user": {
+		"id": "{{#? user.id}}",
+		"email": "{{#? user.email}}",
+		"firstName": "{{#? user.firstName}}",
+		"lastName": "{{#? user.lastName}}",
+		"dni": "{{#? user.dni}}",
+		"dniType": "{{#? user.dniType}}",
+		"dateOfBirth": "{{#? user.dateOfBirth}}",
+		"imageUrl": "{{#? user.imageUrl}}",
+		"gender": "{{#? user.gender}}",
+		"note": "{{#? user.note}}",
+		"status": "{{#? user.status}}",
+		"createdAt": "{{#? user.createdAt}}",
+		"updatedAt": "{{#? user.updatedAt}}",
+		"phones": {
+			"{{#each user.Phones}}": {
+				"id": "{{#? this.id}}",
+				"number": "{{#? this.number}}",
+				"phoneType": "{{#? this.phoneType}}"
+			}
+		},
+		"locations": {
+			"{{#each user.Locations}}": {
+				"id": "{{#? this.id}}",
+				"address": "{{#? this.address}}",
+				"state": "{{#? this.state}}",
+				"city": "{{#? this.city}}",
+				"postalCode": "{{#? this.postalCode}}",
+				"isLivingPlace": "{{#? this.isLivingPlace}}"
+			}
+		},
+		"role": {
+			"id": "{{#? user.Role.id}}",
+			"name": "{{#? user.Role.name}}",
+			"description": "{{#? user.Role.description}}"
+		},
+		"parameters": {
+			"{{#each user.Parameters}}": {
+				"id": "{{#? this.id}}",
+				"name": "{{#? this.name}}",
+				"description": "{{#? this.description}}",
+				"status": "{{#? this.status}}"
+			}
+		}
+	},
+	"accessToken": "{{#? token}}"
+}

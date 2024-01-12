@@ -1,0 +1,13 @@
+{
+	"status": true,
+	"message" : { 
+		"code" : "{{#? message.code}}",
+		"text" : "{{#? message.text}}"
+	},
+	"phone": {
+		"id": "{{#? phone.id}}",
+		"number": "{{#? phone.number}}",
+		"phoneType": "{{#? phone.phoneType}}",
+		"UserId": "{{#? phone.UserId}}"
+	}
+}

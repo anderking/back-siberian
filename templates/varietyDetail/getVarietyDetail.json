@@ -1,0 +1,15 @@
+{
+	"status": true,
+	"message": {
+		"code": "{{#? message.code}}",
+		"text": "{{#? message.text}}"
+	},
+	"varietyDetail": {
+		"id": "{{#? VarietyDetail.id}}",
+		"name": "{{#? VarietyDetail.name}}",
+		"description": "{{#? VarietyDetail.description}}",
+		"VarietyEquipinfras_id": "{{#? VarietyDetail.VarietyEquipinfraId}}",
+		"createdAt": "{{#? VarietyDetail.createdAt}}",
+		"updatedAt": "{{#? VarietyDetail.updatedAt}}"
+	}
+}
