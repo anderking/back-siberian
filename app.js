@@ -5,7 +5,6 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const session = require('express-session')
 const cors = require('cors')
-const job = require('./jobs/finishServiceOrder')
 const cRole = require('./controllers/cRole')
 
 const rUser = require('./routes/rUser')
