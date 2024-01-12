@@ -1,7 +1,7 @@
 {
 	"development": {
-		"username": "watson",
-		"password": "watson",
+		"username": "postgres",
+		"password": "admin",
 		"database": "watson_dev",
 		"host": "localhost",
 		"dialect": "postgres",
