@@ -204,12 +204,12 @@ These instructions will help you to set up the environment for using the API.
 
 ### Using the live demo
 
-Use the base URL https://siberian-api.herokuapp.com/api on your application or on your favorite ADE (like [Postman](https://www.getpostman.com)).
+Use the base URL https://siberian.onrender.com/api on your application or on your favorite ADE (like [Postman](https://www.getpostman.com)).
 
 ### Using locally
 
 1. To use locally you first need to set up a PostgresSQL Database. Check the [documentation](https://www.postgresql.org/) to learn how to do it.
-2. Edit the [`config.json`](https://gitlab.com/team-watson/api/blob/dev/config/config.json) file with your credentials or configure your database with the given data.
+2. Edit the [`config.json`](config/config.json) file with your credentials or configure your database with the given data.
 3. Install [Node](https://nodejs.org/) (^10.x.x).
 4. Use [Yarn](https://yarnpkg.com/) as package manager.
 
@@ -218,7 +218,7 @@ Use the base URL https://siberian-api.herokuapp.com/api on your application or o
 Run the following commands in a terminal.
 
 ```bash
-$ git clone https://gitlab.com/team-watson/api.git
+$ git clone
 $ cd API
 $ yarn
 $ yarn db
@@ -231,8 +231,6 @@ $ yarn start
 ```
 x-access-token: token-value
 ```
-
-You can import the files on Postman using this link: https://www.getpostman.com/collections/390658674936752af9dc
 
 ---
 
@@ -11448,13 +11446,4 @@ Path Variables: eid = 4, uid: 3
 ```
 
 ---
-
-
-## Authors
-
-|Name| Email | LinkedIn | Gitlab | Telegram |
-|--|--|--|--|--|
-| Junior Camacho | juniordaron@gmail.com |[juniordaron](https://www.linkedin.com/in/juniordaron) | @Darons  | @Darons |
-| Gilberto Pérez | gilbertojpargas94@gmail.com |[gilbertojpargas94](https://www.linkedin.com/in/gilbertojpargas94/) | @gilbertojpargas94 | @elnoviodebetza |
-| Maria Gabriela Moreno | marimorexx@gmail.com |[marimorex](/) | @marimorex | @marimorex |
 
